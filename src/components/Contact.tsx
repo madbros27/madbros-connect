@@ -2,20 +2,35 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { MapPin, Mail, MessageCircle, Instagram, Twitter, Linkedin, Globe } from "lucide-react";
+import { useState } from "react";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const form = e.target as HTMLFormElement;
-    const email = form.email.value;
-    const subject = form.subject.value;
-    const message = form.message.value;
     
-    // Create mailto link
-    const mailtoLink = `mailto:madbrostech27@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`From: ${email}\n\n${message}`)}`;
+    // Create WhatsApp message
+    const message = `*Name:* ${formData.name}\n*Email:* ${formData.email}\n*Subject:* ${formData.subject}\n\n*Message:*\n${formData.message}`;
     
-    // Open email client
-    window.location.href = mailtoLink;
+    // Create WhatsApp link with pre-filled message
+    const whatsappLink = `https://wa.me/+918660048340?text=${encodeURIComponent(message)}`;
+    
+    // Open WhatsApp in a new tab
+    window.open(whatsappLink, '_blank');
   };
 
   return (
@@ -44,6 +59,8 @@ const Contact = () => {
                         id="name"
                         name="name"
                         required
+                        value={formData.name}
+                        onChange={handleChange}
                         className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-madbros-red"
                         placeholder="John Doe"
                       />
@@ -55,6 +72,8 @@ const Contact = () => {
                         id="email"
                         name="email"
                         required
+                        value={formData.email}
+                        onChange={handleChange}
                         className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-madbros-red"
                         placeholder="john@example.com"
                       />
@@ -67,6 +86,8 @@ const Contact = () => {
                       id="subject"
                       name="subject"
                       required
+                      value={formData.subject}
+                      onChange={handleChange}
                       className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-madbros-red"
                       placeholder="How can we help you?"
                     />
@@ -77,6 +98,8 @@ const Contact = () => {
                       id="message"
                       name="message"
                       required
+                      value={formData.message}
+                      onChange={handleChange}
                       rows={5}
                       className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-madbros-red"
                       placeholder="Your message here..."
