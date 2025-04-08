@@ -13,6 +13,9 @@ const Hero = () => {
               <span className="block">We Are</span>
               <span className="text-madbros-red">MAD BROS</span>
             </h1>
+            <h3 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+              <span className="block">FREELANCERS</span>
+            </h3>
             <p className="text-xl md:text-2xl mb-6 opacity-90 max-w-lg mx-auto md:mx-0">
               Connecting people with technology solutions. Learn, share, and grow with us.
             </p>
