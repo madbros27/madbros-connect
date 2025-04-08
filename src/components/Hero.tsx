@@ -19,7 +19,7 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <Button 
                 size="lg" 
-                className="bg-madbros-red hover:bg-red-700 text-white"
+                className="bg-madbros-red hover:bg-red-700 text-red"
                 onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Our Services
