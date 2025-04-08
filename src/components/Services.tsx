@@ -186,7 +186,7 @@ const ContactSlider = () => {
 
   return (
     <div className="max-w-md mx-auto bg-white p-6 rounded-lg shadow-lg">
-      <h4 className="text-lg font-medium mb-4">Send us a message</h4>
+      <h4 className="text-lg font-medium mb-4">Mail your requirements here</h4>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
           <input
