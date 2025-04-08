@@ -12,7 +12,7 @@ const teamMembers = [
     role: "Software Engineer",
     company: "Stellapps Technologies Pvt Ltd, Bengaluru",
     experience: "6+ Years",
-    image: "/lovable-uploads/8925b475-388e-41b4-b00a-4e9b20b8fcc2.png",
+    image: "/lovable-uploads/96c2e5a8-9362-49b9-be6c-0810b264a165.png",
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const teamMembers = [
     role: "Product Development Engineer",
     company: "Unisys India Pvt Ltd, Bengaluru",
     experience: "4+ Years",
-    image: "/lovable-uploads/96c2e5a8-9362-49b9-be6c-0810b264a165",
+    image: "/lovable-uploads/8925b475-388e-41b4-b00a-4e9b20b8fcc2.png",
   },
   {
     id: 3,
