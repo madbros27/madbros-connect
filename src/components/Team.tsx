@@ -20,7 +20,7 @@ const teamMembers = [
     role: "Product Development Engineer",
     company: "Unisys India Pvt Ltd, Bengaluru",
     experience: "4+ Years",
-    image: "/lovable-uploads/8925b475-388e-41b4-b00a-4e9b20b8fcc2.png",
+    image: "/lovable-uploads/50e65dbf-e4ed-4270-b819-1c237a9e0d64.png",
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ const teamMembers = [
     role: "Software Engineer",
     company: "Ansira, Bengaluru",
     experience: "4+ Years",
-    image: "/lovable-uploads/50e65dbf-e4ed-4270-b819-1c237a9e0d64.png",
+    image: "/lovable-uploads/8925b475-388e-41b4-b00a-4e9b20b8fcc2.png",
   },
   {
     id: 4,
