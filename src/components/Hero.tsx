@@ -25,14 +25,6 @@ const Hero = () => {
                 Our Services
                 <ChevronRight className="ml-2 h-4 w-4" />
               </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-white text-white hover:bg-white/10"
-                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-              >
-                Contact Us
-              </Button>
             </div>
           </div>
           <div className="md:w-1/2 flex justify-center md:justify-end">
@@ -56,3 +48,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
