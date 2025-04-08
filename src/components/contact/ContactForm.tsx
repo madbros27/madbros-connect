@@ -35,7 +35,7 @@ const ContactForm = () => {
   return (
     <Card className="bg-white text-madbros-navy">
       <CardContent className="p-6">
-        <h3 className="text-xl font-semibold mb-4">Send Us A Message</h3>
+        <h3 className="text-xl font-semibold mb-4">Send Us A Message on Whatsapp</h3>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
@@ -48,7 +48,7 @@ const ContactForm = () => {
                 value={formData.name}
                 onChange={handleChange}
                 className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-madbros-red"
-                placeholder="John Doe"
+                placeholder="Please enter your Full Name"
               />
             </div>
             <div>
@@ -61,7 +61,7 @@ const ContactForm = () => {
                 value={formData.email}
                 onChange={handleChange}
                 className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-madbros-red"
-                placeholder="john@example.com"
+                placeholder="Please enter your email id"
               />
             </div>
           </div>
