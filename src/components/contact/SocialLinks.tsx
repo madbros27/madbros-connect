@@ -25,7 +25,7 @@ const SocialLinks = () => {
       <h4 className="font-medium mb-4">Follow Us</h4>
       <div className="flex space-x-4">
         <SocialLink 
-          href="https://instagram.com/madbros27?igshid=YmMyMTA2M2Y=" 
+          href="https://www.instagram.com/madbrosconnect/" 
           icon={<Instagram size={20} />} 
           label="Instagram"
         />
