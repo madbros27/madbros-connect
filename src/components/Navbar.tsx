@@ -25,7 +25,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
         <Link to="/" className="flex items-center">
           <img 
-            src="/lovable-uploads/c4b21b3a-8481-4003-afb9-2d1449343c25.png" 
+            src="/madbros/lovable-uploads/c4b21b3a-8481-4003-afb9-2d1449343c25.png" 
             alt="MAD BROS Logo" 
             className="h-12 md:h-16"
           />
